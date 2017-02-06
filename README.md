@@ -11,3 +11,5 @@ https://chrome.google.com/webstore/detail/scriptautorunner/gpgjofmpmjjopcogjgdld
 実行されたようす
 
 ![image](https://cloud.githubusercontent.com/assets/4201520/22642070/85a117fa-ec9c-11e6-89b2-9d9b3a2b3011.png)
+
+※ Chromeでのみ動作確認 
