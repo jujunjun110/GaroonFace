@@ -1,4 +1,7 @@
-function setImages() {
+var s = document.createElement("script");
+s.src = "//cdnjs.cloudflare.com/ajax/libs/superagent/3.4.2/superagent.min.js";
+
+s.onload = function () {
     var request = window.superagent;
     var nameElements = document.querySelectorAll('.username_grn');
     nameElements.forEach(function (item) {
@@ -38,10 +41,7 @@ function setImages() {
         item.parentNode.appendChild(imgEl);
     }
 
-}
+};
 
-var s = document.createElement("script");
-s.src = "//cdnjs.cloudflare.com/ajax/libs/superagent/3.4.2/superagent.min.js";
-s.onload = setImages();
 document.body.appendChild(s);
 
