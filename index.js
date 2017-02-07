@@ -1,15 +1,15 @@
-var s = document.createElement("script");
-s.src = "//cdnjs.cloudflare.com/ajax/libs/superagent/3.4.2/superagent.min.js";
-s.onload = function () {
+function setImages() {
     var request = window.superagent;
-    var names = document.querySelectorAll('.username_grn');
-    names.forEach(function (item) {
-        var href = item.childNodes[0].getAttribute("href");
+    var nameElements = document.querySelectorAll('.username_grn');
+    nameElements.forEach(function (item) {
+        var href = item.querySelectorAll("a")[0].getAttribute('href');
+
         if (!href) {
             return;
         }
-        var link = href.split("'")[1];
-        var imgPageUrl = 'https://' + document.location.hostname + link;
+
+        var path = href.split("'")[1];
+        var imgPageUrl = document.location.origin + path;
 
         var localImageUrl = localStorage.getItem(imgPageUrl);
         if (localImageUrl) {
@@ -37,7 +37,11 @@ s.onload = function () {
         imgEl.setAttribute("style", 'display: block; width: 80px');
         item.parentNode.appendChild(imgEl);
     }
-};
 
+}
+
+var s = document.createElement("script");
+s.src = "//cdnjs.cloudflare.com/ajax/libs/superagent/3.4.2/superagent.min.js";
+s.onload = setImages();
 document.body.appendChild(s);
 
