@@ -1,10 +1,8 @@
 # GaroonFace
 
-Garoonの掲示板に自動で顔写真を出してくれるスクリプトだよ
+Garoonの掲示板に自動で顔写真を出してくれるスクリプト。
 
-スクリプト自動実行の拡張機能に設定して使えるよ
-
-https://chrome.google.com/webstore/detail/scriptautorunner/gpgjofmpmjjopcogjgdldidobhmjmdbm?hl=ja
+こういう[スクリプト自動実行の拡張機能](https://chrome.google.com/webstore/detail/scriptautorunner/gpgjofmpmjjopcogjgdldidobhmjmdbm?hl=ja)に設定して使える。
 
 ![image](https://cloud.githubusercontent.com/assets/4201520/22641992/3d558e36-ec9c-11e6-8fa4-327b55e43776.png)
 
